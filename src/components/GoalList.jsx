@@ -1,4 +1,5 @@
 import GoalItem  from "./GoalItem"; // importing the default export
+import Link from "./Link"; // importing the default export
 
 /*
     The GoalList component is a functional component that returns a list of GoalItem components.
@@ -15,7 +16,7 @@ const GoalList = () => {
            <ul>
                 <GoalItem title='Teach React in a highly-understandable way'>
                     I want to ensure, that you get the most out of this book and you learn
-                    all about React!
+                    all about <Link href="https://reactjs.org/"> React!</Link>
                 </GoalItem>
                 <GoalItem title='Allow you to practice what you learned'>
                     Reading and learning is fun and helpful but you only master a topic, if
@@ -25,7 +26,9 @@ const GoalList = () => {
                 <GoalItem title='Motivate you to continue learning'>
                     As a developer, learning never ends. I want to ensure that you enjoy
                     learning and you're motivated to dive into advanced (React) resources
-                    after finishing this book. Maybe my complete React video course?
+                    after finishing this book. Maybe my complete React 
+                    <Link href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"> video course</Link>?
+                    
                 </GoalItem>
             </ul>
         </div>
